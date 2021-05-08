@@ -77,4 +77,6 @@ Esta metodologia es en beneficio de aquellos que necesiten estudiar/revisar la s
 
 ## Contribucion
 
-Porfavor contribuir usando [Github Flow](https://guides.github.com/introduction/flow/). Crea una rama, agrega commits y luego crea un pull request [open a pull request](https://github.com/Rcontre360/algorithm_viewer/compare/).
+Porfavor contribuir usando [Github Flow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow). Crea una rama, agrega commits y luego crea un pull request [open a pull request](https://github.com/Rcontre360/algorithm_viewer/compare/).
+
+Cada ejercicio es un 'feature' en gitflow. Es decir, una nueva rama.
