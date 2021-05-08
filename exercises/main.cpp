@@ -1,6 +1,6 @@
 #include <iostream>
 #include "../utils/exercise.h"
-#include "./mouseLaberinth/main.cpp"
+#include "./mouseMaze/main.cpp"
 
 using namespace std;
 
