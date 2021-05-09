@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
-#include "../../utils/fileReader.cpp"
+#include <queue>
+#include <fstream>
 #include "../../utils/exercise.h"
 
 using namespace std;
@@ -10,7 +11,8 @@ const char
 	FREE_FIELD = '.',
 	BLOCKED_FIELD = '#'
 ;
-const string TEST_CASES_FILE = "testCases.txt";
+//must be directory from executable file.
+const string TEST_CASES_FILE = "./exercises/mouseMaze/testCases.txt";
 
 class MouseLaberinth:public Exercise{
 private: 
@@ -21,13 +23,14 @@ private:
 	int J[4] = {0,1,0,-1};
 
 	void readInput(){
-		cin>>rows>>columns>>startRow>>startColumn>>maxNumberSteps;
+		ifstream reader(TEST_CASES_FILE);
+		reader>>rows>>columns>>startRow>>startColumn>>maxNumberSteps;
 		for (int i=0;i<rows;i++){
 			char aux;
 			vector<char> aux2;
 			table.push_back(aux2);
 			for (int j=0;j<columns;j++){
-				cin>>aux;
+				reader>>aux;
 				table[i].push_back(aux);
 			}
 		}
@@ -62,6 +65,10 @@ private:
 
 	bool isVisitable(int i,int j){
 		return i<rows && i>=0 && j<columns && j>=0 && table[i][j]!=BLOCKED_FIELD; 
+	}
+
+	int BreathFirstSearch(){
+		return 1;
 	}
 
 public:
