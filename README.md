@@ -79,4 +79,12 @@ Esta metodologia es en beneficio de aquellos que necesiten estudiar/revisar la s
 
 Porfavor contribuir usando [Github Flow](https://www.atlassian.com/es/git/tutorials/comparing-workflows/gitflow-workflow). Crea una rama, agrega commits y luego crea un pull request [open a pull request](https://github.com/Rcontre360/algorithm_viewer/compare/).
 
-Cada ejercicio es un 'feature' en gitflow. Es decir, una nueva rama.
+Cada ejercicio es un 'feature' en gitflow. Es decir, una nueva rama. Cada rama debe tener el siguiente formato: feature/'nombre_del_ejercicio'.
+
+### Recomendaciones
+	
+- Agregar un README.md a cada ejercicio agregado dentro de su carpeta.
+
+- Agregar un testCases.txt para los casos de prueba del ejercicio.
+
+- Utilizar ifstream (#include < fstream >) para leer el testCases.txt. IMPORTANTE: usar la ruta del archivo testCases.txt desde main.cpp en el archivo raiz. Eg: ver exercises/mouseMaze/main.cpp linea 13.
