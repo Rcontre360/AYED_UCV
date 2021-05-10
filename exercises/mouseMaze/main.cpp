@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <queue>
 #include <fstream>
 #include "../../utils/exercise.h"
 
@@ -11,6 +10,7 @@ const char
 	FREE_FIELD = '.',
 	BLOCKED_FIELD = '#'
 ;
+
 //must be directory from executable file.
 const string TEST_CASES_FILE = "./exercises/mouseMaze/testCases.txt";
 
@@ -27,8 +27,7 @@ private:
 		reader>>rows>>columns>>startRow>>startColumn>>maxNumberSteps;
 		for (int i=0;i<rows;i++){
 			char aux;
-			vector<char> aux2;
-			table.push_back(aux2);
+			table.push_back({});
 			for (int j=0;j<columns;j++){
 				reader>>aux;
 				table[i].push_back(aux);
