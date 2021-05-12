@@ -34,7 +34,7 @@ a.exe
 
 Unicamente para uso educativo, varios problemas y ejercicios del curso son planteados y resueltos en el repositorio. Los temas abordados son:
  
-- Apuntadores (en progreso)
+- Apuntadores
 - Pilas y Colas (en progreso)
 - Arboles (en progreso)
 - Recursion (en progreso)
