@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <fstream>
+#include "../../utils/exercise.h"
 using namespace std;
 
 class Event {
@@ -9,6 +11,7 @@ public:
 	string details, yearMonth;
 
 	Event(int day1, int month1){
+		fstream reader(TEST_CASES_PATH);
 
 		while(!validMonth(month1)){
 			cout << "Mes inválido, por favor intente de nuevo: ";
@@ -22,8 +25,8 @@ public:
 		}
 		day = day1;
 
-		cout << "Ingrese los detalles del evento: ";
-		cin.ignore(); getline(cin, details);
+		cout<<"Nombre del evento: "<<endl;
+		reader.ignore(); getline(reader, details);
 	}
 
 	bool validMonth (int month){ //Validando meses
@@ -49,6 +52,7 @@ public:
  			if (day>=1 && day<=30) return true;
  			else return false;
  		}
+ 		return true;
  	}
 
  	void yearDay(){ //Calculando el día del año y el guardando mes en letra
@@ -138,26 +142,29 @@ public:
 	
 };
 
-int main(){
+class Solution1:public Exercise{
+public:
 
-	cout << "CALENDARIO 2O21\n";
-	int cant, month1, day1;
+	void init(){
+		ifstream reader(TEST_CASES_PATH);
+		int cant, month1, day1;
 
-	bool go = false;
-	while (!go){ //Se pide la cantidad de eventos, si es inválida se queda en el while
-		cout << "Ingrese la cantidad de eventos a añadir: "; cin >> cant;
-		if (cant<0) cout << "Cantidad inválida. Intente de nuevo.\n";
-		else go = true;
+		bool go = false;
+		while (!go){ //Se pide la cantidad de eventos, si es inválida se queda en el while
+			cout<<"Cantidad de Eventos a Agregar:"<<endl;
+			reader >> cant;
+			if (cant<0) cout << "Cantidad inválida. Intente de nuevo.\n";
+			else go = true;
+		}
+
+		for(int i=0; i<cant; ++i){
+			cout<<"Numero del mes: "<<endl; reader >> month1;
+			cout<<"Día: "; reader >> day1;
+			Event test(day1, month1);
+			test.yearDay();
+			cout << test.day << " de " << test.yearMonth << ": " << test.details << "\n";
+		}
+
 	}
-	cout << '\n';
 
-	for(int i=0; i<cant; ++i){
-		cout << "Ingrese el mes del evento: "; cin >> month1;
-		cout << "Ingrese el día del evento: "; cin >> day1;
-		Event test(day1, month1);
-		cout << "Evento " << i+1 << '\n';
-		test.yearDay();
-		cout << test.day << " de " << test.yearMonth << ": " << test.details << "\n\n";
-	}
-
-}
+};
