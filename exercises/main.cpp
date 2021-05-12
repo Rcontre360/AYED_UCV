@@ -1,10 +1,11 @@
 #include <iostream>
 #include "../utils/exercise.h"
+#include "./Calendar/main.cpp"
 #include "./mouseMaze/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=1;
+const int NUMBER_OF_EXERCISES=2;
 
 class ExercicesStarter{
 public:
@@ -12,6 +13,7 @@ public:
 
 	ExercicesStarter(){
 		array[0] = new MouseLaberinth();
+		array[1] = new Calendar();
 	}
 
 	void startExercises(){
