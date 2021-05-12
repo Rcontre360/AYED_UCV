@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "../../utils/exercise.h"
 using namespace std;
+
+const string TEST_CASES_PATH = "./exercises/Calendar/testCases.txt";
 
 class Calendar:public Exercise{
 
@@ -173,28 +176,29 @@ private:
 
 public:
     void init() {
+        ifstream reader(TEST_CASES_PATH);
         int cantEvents;
         Event *evento;
         string prueba;
         cout<<"Ingrese Cantidad de Eventos que va a Agregar:"<<endl;
-        cin>>cantEvents;
+        reader>>cantEvents;
         evento = new Event[cantEvents];
         
         for(int i=0; i < cantEvents; i++){
             cout<<"Evento Nº "<<i+1<<'\n';
             do{
                 cout<<"Ingrese el numero del mes: "<<endl;
-                cin>>evento[i].month;
+                reader>>evento[i].month;
             }while(!monthValidation(evento[i].month)); // Va a estar en el while mientras sea un mes invalido
 
             do{
                 cout<<"Ingrese el día: ";
-                cin>>evento[i].day;
+                reader>>evento[i].day;
             }while(!dayValidation(evento[i].day, evento[i].month, evento[i].dayOfTheYear)); //Va a estar en el while mientras el
                                                                                             // dia sea invalido
             cout<<"Ingrese el nombre del evento: "<<endl;
-            cin.ignore();
-            getline (cin , evento[i].events); 
+            reader.ignore();
+            getline (reader , evento[i].events); 
             
         }
 
