@@ -202,16 +202,3 @@ int main() {
     
     return 0;
 }
-
-/*
-char * cadena_dinamica = NULL; // arreglo vacio.
- 
- int cantidad = 0;
- 
- obtenemos un valor de cantidad capturado de consola
- cout<< "Por favor digite el tamaño del arreglo ";
- cin>>cantidad;
- 
- creamos el arreglo dinámico con el parametro capturado
- cadena_dinamica = new char[cantidad];
-*/
