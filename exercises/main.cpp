@@ -18,7 +18,7 @@ public:
 
 	void startExercises(){
 		for (int i=0;i<NUMBER_OF_EXERCISES;i++){
-			cout<<"Exercise number "<<i+1<<":\n";
+			cout<<"\nExercise number "<<i+1<<":\n\n";
 			array[i]->init();
 		}
 		cout<<"end";
