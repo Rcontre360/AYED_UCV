@@ -10,6 +10,8 @@ const char
 	FREE_FIELD = '.',
 	BLOCKED_FIELD = '#'
 ;
+
+//must be directory from executable file.
 const string TEST_CASES_FILE = "./exercises/mouseMaze/testCases.txt";
 
 class MouseLaberinth:public Exercise{
@@ -62,6 +64,10 @@ private:
 
 	bool isVisitable(int i,int j){
 		return i<rows && i>=0 && j<columns && j>=0 && table[i][j]!=BLOCKED_FIELD; 
+	}
+
+	int BreathFirstSearch(){
+		return 1;
 	}
 
 public:

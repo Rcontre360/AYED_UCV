@@ -128,38 +128,19 @@
 	"buffers":
 	[
 		{
-			"file": "main.cpp",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 186,
+				"buffer_size": 2995,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "exercises/main.cpp",
+			"file": "exercises/mouseMaze/main.cpp",
 			"settings":
 			{
-				"buffer_size": 409,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "exercises/mouseLaberinth.cpp",
-			"settings":
-			{
-				"buffer_size": 1308,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "exercises/exercise.cpp",
-			"settings":
-			{
-				"buffer_size": 98,
-				"encoding": "UTF-8",
+				"buffer_size": 1491,
 				"line_ending": "Unix"
 			}
 		}
@@ -175,6 +156,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
 			[
 				"Package Control: ins",
 				"Package Control: Install Package"
@@ -217,16 +206,33 @@
 	"expanded_folders":
 	[
 		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV",
-		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises"
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseMaze",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/utils"
 	],
 	"file_history":
 	[
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseMaze/testCases.txt",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseMaze/README.md",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/README.md",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/main.cpp",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseMaze/main.cpp",
+		"/usr/include/c++/9/iosfwd",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/Calendar/main.cpp",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/utils/fileReader.cpp",
+		"/usr/include/c++/9/bits/basic_ios.h",
 		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/main.cpp",
+		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/README.md",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/.gitignore",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseLaberinth/testCases.txt",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseLaberinth/main.cpp",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseLaberinth/README.md",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/exercise.cpp",
+		"/home/rafael/Desktop/sandbox/gitRepos/AYP_UCV/exercises/mouseLaberinth.cpp",
 		"/home/rafael/Desktop/sandbox/university/tests/main.cpp",
 		"/usr/include/c++/9/bits/stl_vector.h",
 		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/src/algorithms/data_structures/Graph/index.ts",
 		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/src/globals.d.ts",
-		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/README.md",
 		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/src/components/App.tsx",
 		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/src/algorithms/dfs.ts",
 		"/home/rafael/Desktop/sandbox/gitRepos/algorithm_viewer/src/canvas_shapes/GraphNode.ts",
@@ -326,6 +332,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rdbuf",
 			"Circle",
 			"circle",
 			"ciecle",
@@ -421,123 +428,66 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.cpp",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 186,
+						"buffer_size": 2995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								142,
-								142
+								2221,
+								2221
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"parser": "markdown",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"target": "disk"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "exercises/main.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								72,
-								72
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "exercises/mouseLaberinth.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1308,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								102
-							]
-						],
-						"settings":
-						{
-							"open_with_edit": true,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2419.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "exercises/exercise.cpp",
-					"semi_transient": false,
+					"buffer": 1,
+					"file": "exercises/mouseMaze/main.cpp",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 98,
+						"buffer_size": 1491,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"open_with_edit": true,
-							"syntax": "Packages/C++/C++.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
