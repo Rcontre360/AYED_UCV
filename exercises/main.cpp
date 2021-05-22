@@ -4,10 +4,11 @@
 #include "./mouseMaze/main.cpp"
 #include "./RepeatedNumbers/main.cpp"
 #include "./ListIntersection/main.cpp"
+#include "./RussianMultiplication/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=4;
+const int NUMBER_OF_EXERCISES=5;
 
 class ExercicesStarter{
 public:
@@ -18,6 +19,7 @@ public:
 		array[1] = new Calendar();
 		array[2] = new RepeatedNumbers();
 		array[3] = new ListIntersection();
+		array[4] = new RussianMultiplication();
 	}
 
 	void startExercises(){
