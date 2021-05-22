@@ -68,6 +68,7 @@ private:
 			standarSolution(first[i],second[i]);
 			cout<<"Standar O(n+m) solution: ";
 			greedySolution(first[i],second[i]);
+			cout<<'\n';
 		}
 	}
 
