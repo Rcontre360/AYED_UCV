@@ -5,10 +5,11 @@
 #include "./RepeatedNumbers/main.cpp"
 #include "./ListIntersection/main.cpp"
 #include "./RussianMultiplication/main.cpp"
+#include "./MCD/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=5;
+const int NUMBER_OF_EXERCISES=6;
 
 class ExercicesStarter{
 public:
@@ -20,6 +21,7 @@ public:
 		array[2] = new RepeatedNumbers();
 		array[3] = new ListIntersection();
 		array[4] = new RussianMultiplication();
+		array[5] = new MCD();
 	}
 
 	void startExercises(){
