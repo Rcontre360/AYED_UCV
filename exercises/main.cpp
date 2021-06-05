@@ -6,10 +6,11 @@
 #include "./ListIntersection/main.cpp"
 #include "./RussianMultiplication/main.cpp"
 #include "./MCD/main.cpp"
+#include "./MaximumMatrix/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=6;
+const int NUMBER_OF_EXERCISES=7;
 
 class ExercicesStarter{
 public:
@@ -22,6 +23,7 @@ public:
 		array[3] = new ListIntersection();
 		array[4] = new RussianMultiplication();
 		array[5] = new MCD();
+		array[6] = new MaximumMatrix();
 	}
 
 	void startExercises(){
