@@ -7,10 +7,11 @@
 #include "./RussianMultiplication/main.cpp"
 #include "./MCD/main.cpp"
 #include "./MaximumMatrix/main.cpp"
+#include "./MultipleFormulas/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=7;
+const int NUMBER_OF_EXERCISES=8;
 
 class ExercicesStarter{
 public:
@@ -24,6 +25,7 @@ public:
 		array[4] = new RussianMultiplication();
 		array[5] = new MCD();
 		array[6] = new MaximumMatrix();
+		array[7] = new MultipleFormulas();
 	}
 
 	void startExercises(){
