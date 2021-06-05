@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <set>
 #include "../../utils/exercise.h"
 
 typedef vector<vector<int>> Matrix;
@@ -70,21 +71,25 @@ private:
 
 };
 
-vector<int> solution;
-int mx;
+
 class WithBacktracking{
 public:
+	vector<int> solution;
+	set<vector<int>> DP;
+	int mx;
 
-	static vector<int> start(Matrix m){
+	vector<int> start(Matrix m){
 		Matrix sumMatrix = getSumMatrix(m);
+
 		mx = -INF;
 		solution.clear();
+
 		solve(sumMatrix,{0,0,0,0});
 		return {solution[0],solution[2],solution[1],solution[3]};
 	}
 
 private:
-	static Matrix getSumMatrix(Matrix m){
+	Matrix getSumMatrix(Matrix m){
 		Matrix sum = m;
 		for (int i=0;i<m.size();i++) sum[i] = m[i];
 
@@ -101,9 +106,12 @@ private:
 		return sum;
 	}
 
-	static void solve(Matrix mt,vector<int> xy){
+	void solve(Matrix mt,vector<int> xy){
 		int m = mt.size(), n = mt[0].size();
 		int current = calculate(mt, xy);
+
+		if (DP.count(xy)) return;
+		else DP.insert(xy);
 
 		if (current>mx){
 			solution = xy;
@@ -122,7 +130,7 @@ private:
 		}
 	}
 
-	static int calculate(Matrix m,vector<int> coords){
+	int calculate(Matrix m,vector<int> coords){
 		int a = coords[0], b = coords[1], c = coords[2], d = coords[3];
 		int total = m[c][d];
 
@@ -163,7 +171,8 @@ private:
 		cout<<"Using kadane's algorithm: ";
 		print(WithKadane::start(m));
 		cout<<"Using backtracking: ";
-		print(WithBacktracking::start(m));
+		WithBacktracking a;
+		print(a.start(m));
 		cout<<endl;
 	}
 
