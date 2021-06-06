@@ -3,14 +3,14 @@
 #include "../../utils/exercise.h"
 using namespace std;
 
-const string TEST_FILE_PATH = "./exercises/Goldbach/testCases.txt";
+const string GODLBACH_FILE_PATH = "./exercises/Goldbach/testCases.txt";
 
 class Goldbach:public Exercise{
 
 public:
 
-	int (init){
-		input()
+	void init(){
+		input();
 	};
 
 	bool esPrimo(int n){
@@ -33,7 +33,7 @@ public:
 
 	int input(){
 
-		fstream reader(TEST_FILE_PATH);
+		fstream reader(GODLBACH_FILE_PATH);
 		int num;
 
 		cout << "Ingrese un número natural: (Número del testCases)."; reader >> num;
