@@ -8,10 +8,11 @@
 #include "./MCD/main.cpp"
 #include "./MaximumMatrix/main.cpp"
 #include "./MultipleFormulas/main.cpp"
+#include "./Goldbach/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=8;
+const int NUMBER_OF_EXERCISES=9;
 
 class ExercicesStarter{
 public:
@@ -26,6 +27,7 @@ public:
 		array[5] = new MCD();
 		array[6] = new MaximumMatrix();
 		array[7] = new MultipleFormulas();
+		array[8] = new Goldbach();
 	}
 
 	void startExercises(){
