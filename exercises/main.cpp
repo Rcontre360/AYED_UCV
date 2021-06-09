@@ -9,10 +9,11 @@
 #include "./MaximumMatrix/main.cpp"
 #include "./MultipleFormulas/main.cpp"
 #include "./Goldbach/main.cpp"
+#include "./Hacking/main.cpp"
 
 using namespace std;
 
-const int NUMBER_OF_EXERCISES=9;
+const int NUMBER_OF_EXERCISES=10;
 
 class ExercicesStarter{
 public:
@@ -28,6 +29,7 @@ public:
 		array[6] = new MaximumMatrix();
 		array[7] = new MultipleFormulas();
 		array[8] = new Goldbach();
+		array[9] = new Hacking();
 	}
 
 	void startExercises(){
